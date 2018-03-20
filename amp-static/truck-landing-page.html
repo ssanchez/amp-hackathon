@@ -1,16 +1,11 @@
-<!--
-## Introduction
-
-This sample showcases how to build a housing page in AMP HTML. Explore how to use amp components, like `amp-carousel`, `form` and `amp-list` to create a housing page.
--->
-<!-- -->
 <!doctype html>
 <html ⚡>
 
 <head>
   <meta charset="utf-8">
   <title>Buyerzone Trucks</title>
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="canonical" href="https://ampbyexample.com/sample_amps/housing/">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <!--
     Additionally used AMP components must be imported in the header.
     -->
@@ -24,8 +19,6 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
-  <link rel="canonical" href="https://ampbyexample.com/sample_amps/housing/">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-custom>
     html,
     body {
@@ -541,59 +534,9 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
       }
     }
   </style>
-  <style amp-boilerplate>
-    body {
-      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
 
-    @-webkit-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-moz-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-o-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-  </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
 <body>
@@ -621,7 +564,7 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
  </div>
  <div class="footer">
      <a href="/"><img src="https://cdn.buyerzone.com/images/BZ_logo_white.svg" alt="BUYERZONE"></a>
-     <p>&copy;<script type="text/javascript"></script>2018, BuyerZone.com, LLC. A Purch Brand. All rights reserved.</p>
+     <p>&copy;2018, BuyerZone.com, LLC. A Purch Brand. All rights reserved.</p>
  </div>
 </body>
 
