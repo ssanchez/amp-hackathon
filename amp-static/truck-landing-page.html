@@ -1,16 +1,11 @@
-<!--
-## Introduction
-
-This sample showcases how to build a housing page in AMP HTML. Explore how to use amp components, like `amp-carousel`, `form` and `amp-list` to create a housing page.
--->
-<!-- -->
 <!doctype html>
 <html ⚡>
 
 <head>
   <meta charset="utf-8">
   <title>Buyerzone Trucks</title>
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="canonical" href="https://ampbyexample.com/sample_amps/housing/">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <!--
     Additionally used AMP components must be imported in the header.
     -->
@@ -24,8 +19,6 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
-  <link rel="canonical" href="https://ampbyexample.com/sample_amps/housing/">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-custom>
     html,
     body {
@@ -290,8 +283,8 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
       transition: box-shadow 0.6s ease 0s;
       float: left;
       clear: left;
-      margin-left: 328px !important;
-      margin-top: -49px !important;
+      margin-left: 328px;
+      margin-top: -49px;
 
       text-align: center;
       vertical-align: middle;
@@ -403,8 +396,8 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
       }
 
       .circleFour {
-        margin-left: 216px !important;
-        margin-top: -58px !important;
+        margin-left: 216px;
+        margin-top: -58px;
       }
 
       .why img {
@@ -468,7 +461,7 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
 
 
       .rightContent a {
-        float: none !important;
+        float: none;
         display: inline-block;
       }
 
@@ -481,7 +474,7 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
       }
 
       .circleFour {
-        margin: 0 !important
+        margin: 0;
       }
 
 
@@ -541,66 +534,18 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
       }
     }
   </style>
-  <style amp-boilerplate>
-    body {
-      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
 
-    @-webkit-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-moz-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-o-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-  </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
 <body>
   <div class="bg-img">
     <div class="headLine">
-      <a href="/"><img src="https://cdn.buyerzone.com/images/BZ_logo_buyer.svg" width="220" alt=""></a>
-      <img src="https://cdn.buyerzone.com/images/mktg/portals/headline2.svg" alt="Choose Your Truck">
+      <a href="/">
+        <amp-img src="https://cdn.buyerzone.com/images/BZ_logo_buyer.svg" width="220" height="32" alt="" layout="responsive"></amp-img>
+      </a>
+      <amp-img src="https://cdn.buyerzone.com/images/mktg/portals/headline2.svg" width="391" height="399" alt="Choose Your Truck" layout="responsive"></amp-img>
     </div>
 
 
@@ -615,13 +560,15 @@ This sample showcases how to build a housing page in AMP HTML. Explore how to us
     </div>
   </div>
   <div class="why">
-     <img src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" width="600" height="239" alt="">
+     <amp-img src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" width="600" height="239" alt="" layout="responsive"></amp-img>
      <p><strong>WHY IT MAKES SENSE</strong></p>
      <p>You're interested in a transportation solution that fits your needs at a great price. Instead of spending hours searching websites, BuyerZone does the work for you to find quality dealers who will provide competing price quotes for you to compare. You save valuable time and get to choose the best option based on your budget.</p>
  </div>
  <div class="footer">
-     <a href="/"><img src="https://cdn.buyerzone.com/images/BZ_logo_white.svg" alt="BUYERZONE"></a>
-     <p>&copy;<script type="text/javascript"></script>2018, BuyerZone.com, LLC. A Purch Brand. All rights reserved.</p>
+     <a href="/">
+       <amp-img src="https://cdn.buyerzone.com/images/BZ_logo_white.svg" alt="BUYERZONE" width="720" height="399" layout="responsive"></amp-img>
+     </a>
+     <p>&copy;2018, BuyerZone.com, LLC. A Purch Brand. All rights reserved.</p>
  </div>
 </body>
 
