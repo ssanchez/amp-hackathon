@@ -86,6 +86,16 @@ limitations under the License.
         color: white;
       }
 
+      .circle-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+
+      /* .circle {
+        border-radius: 50%;
+      } */
+
       @media (max-width: 882px) {
         h1 {
           font-size: 1.65em;
@@ -97,11 +107,48 @@ limitations under the License.
         }
       }
 
+      @media (max-width: 515px) {
+        .circleOne-link {
+          display: block;/* This is compulsory */
+          border-radius: 50%;
+          overflow: hidden
+          /* width:220px;
+          height:220px; */
+          /* display: block;
+          background-size: 210px;
+          overflow: hidden; */
+        }
+
+        .circleOne {
+          box-shadow: 0px 0px 0px 4px rgba(166, 143, 0, 1);
+          border-radius: 50%;
+        }
+
+        .circleTwo-link {
+          display: block;
+          background-size: 150px;
+          border-radius: 50%;
+        }
+
+        .circleTwo {
+          box-shadow: 0px 0px 0px 4px rgba(166, 143, 0, 1);
+        }
+
+        .circleThree-link {
+          display: block;
+          border-radius: 50%;
+        }
+
+        .circleThree {
+          box-shadow: 0px 0px 0px 4px rgba(166, 143, 0, 1);
+        }
+      }
+
     </style>
   </head>
   <body>
     <div class="content-container">
-      <amp-img width="806" height="790" alt="Buyerzone" layout="responsive" src="https://cdn.buyerzone.com/images/mktg/portals/bg_trucks_mobile.jpg"></amp-img>
+      <amp-img width="806" height="790" alt="Buyerzone" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/bg_trucks_mobile.jpg"></amp-img>
       <div class="headline">
         <div class="logo">
           <a href="/">
@@ -112,13 +159,24 @@ limitations under the License.
         <div class="tagline">
           <h1>Compare Free Price Quotes on Trucks From Multiple Sellers</h1>
         </div>
+        <div class="circle-container">
+          <a href="#" class="circleOne-link">
+            <amp-img class="circleOne" width="210" height="210" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/box.jpg" media="(max-width: 515px)"></amp-img>
+          </a>
+          <a href="#" class="circleTwo-link">
+            <amp-img class="circleTwo" width="150" height="150" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/box.jpg" media="(max-width: 515px)"></amp-img>
+          </a>
+          <a href="#" class="circleThree-link">
+            <amp-img class="circleThree" width="130" height="130" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/box.jpg" media="(max-width: 515px)"></amp-img>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="description">
-      <amp-img class="boxtrucks-img" src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" height="239" alt="" layout="fixed-height" media="(min-width: 882px)"></amp-img>
-      <amp-img class="boxtrucks-img" src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" width="600" height="239" alt="" layout="responsive" media="(max-width: 882px)"></amp-img>
-      <p><strong>WHY IT MAKES SENSE</strong></p>
-      <p>You're interested in a transportation solution that fits your needs at a great price. Instead of spending hours searching websites, BuyerZone does the work for you to find quality dealers who will provide competing price quotes for you to compare. You save valuable time and get to choose the best option based on your budget.</p>
-    </div>
+      <div class="description">
+        <amp-img class="boxtrucks-img" src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" height="239" alt="" layout="fixed-height" media="(min-width: 882px)"></amp-img>
+        <amp-img class="boxtrucks-img" src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" width="600" height="239" alt="" layout="responsive" media="(max-width: 882px)"></amp-img>
+        <p><strong>WHY IT MAKES SENSE</strong></p>
+        <p>You're interested in a transportation solution that fits your needs at a great price. Instead of spending hours searching websites, BuyerZone does the work for you to find quality dealers who will provide competing price quotes for you to compare. You save valuable time and get to choose the best option based on your budget.</p>
+      </div>
+  </div>
   </body>
 </html>
