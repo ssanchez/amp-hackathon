@@ -73,6 +73,7 @@ limitations under the License.
 
       .boxtrucks-img {
         margin: 26px auto 26px;
+        max-width: 600px;
       }
 
       .headline {
@@ -171,11 +172,18 @@ limitations under the License.
         }
       /*}*/
 
+      img {
+        object-fit: cover;
+        padding-bottom: 25px;
+      }
+
+
     </style>
   </head>
   <body>
     <div class="content-container">
-      <amp-img width="806" height="790" alt="Buyerzone" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/bg_trucks_mobile.jpg"></amp-img>
+      <amp-img width="806" height="800px" alt="Buyerzone" layout="responsive" src="https://cdn.buyerzone.com/images/mktg/portals/bg_trucks_mobile.jpg" media="(max-width: 882px)"></amp-img>
+      <amp-img width="806" height="500" alt="Buyerzone" layout="responsive" src="https://s3.amazonaws.com/uploads.hipchat.com/606000/4338349/1YZpueOVEPPZO98/trucks_dt.jpg" media="(min-width: 882px)"></amp-img>
       <div class="headline">
         <div class="logo">
           <a href="/">
@@ -192,12 +200,12 @@ limitations under the License.
           <a href="#" class="circle circleThree-link"></a>
         </div>
       </div>
-      <div class="description">
-        <amp-img class="boxtrucks-img" src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" height="239" alt="" layout="fixed-height" media="(min-width: 882px)"></amp-img>
-        <amp-img class="boxtrucks-img" src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" width="600" height="239" alt="" layout="responsive" media="(max-width: 882px)"></amp-img>
-        <p><strong>WHY IT MAKES SENSE</strong></p>
-        <p>You're interested in a transportation solution that fits your needs at a great price. Instead of spending hours searching websites, BuyerZone does the work for you to find quality dealers who will provide competing price quotes for you to compare. You save valuable time and get to choose the best option based on your budget.</p>
-      </div>
-  </div>
+    </div>
+    <div class="description">
+      <amp-img class="boxtrucks-img" src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" height="239" alt="" layout="fixed-height" media="(min-width: 882px)"></amp-img>
+      <amp-img class="boxtrucks-img" src="https://cdn.buyerzone.com/images/mktg/portals/collage_trucks.svg" width="600" height="239" alt="" layout="responsive" media="(max-width: 882px)"></amp-img>
+      <p><strong>WHY IT MAKES SENSE</strong></p>
+      <p>You're interested in a transportation solution that fits your needs at a great price. Instead of spending hours searching websites, BuyerZone does the work for you to find quality dealers who will provide competing price quotes for you to compare. You save valuable time and get to choose the best option based on your budget.</p>
+    </div>
   </body>
 </html>
