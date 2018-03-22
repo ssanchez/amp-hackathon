@@ -90,6 +90,7 @@ limitations under the License.
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        align-items: center;
       }
 
       /* .circle {
@@ -107,42 +108,68 @@ limitations under the License.
         }
       }
 
-      @media (max-width: 515px) {
-        .circleOne-link {
-          display: block;/* This is compulsory */
-          border-radius: 50%;
-          overflow: hidden
-          /* width:220px;
-          height:220px; */
-          /* display: block;
-          background-size: 210px;
-          overflow: hidden; */
+      /*@media (max-width: 515px) {*/
+        .circleOne {
+          /*box-shadow: 0px 0px 0px 4px rgba(166, 143, 0, 1);
+          border-radius: 50%;*/
         }
 
-        .circleOne {
-          box-shadow: 0px 0px 0px 4px rgba(166, 143, 0, 1);
+        .circle {
+          background-position: center;
+          background-repeat: no-repeat;
           border-radius: 50%;
+          cursor: pointer;
+          display: block;
+          background-size: 120%;
+          box-shadow: 0px 0px 0px 6px rgba(208, 159, 0, 1) inset;
+          text-align: center;
+          vertical-align: middle;
+          transition: box-shadow 0.6s ease 0s;
+          color: #fff;
+        }
+
+        .circle:hover {
+          box-shadow: 0px 0px 0px 205px rgba(208, 159, 0, .7) inset;
+          transition: all 0.6s ease 0s;
+        }
+
+
+
+        .circleOne-link {
+          background-image: url(//cdn.buyerzone.com/images/mktg/portals/box.jpg);
+          height: 210px;
+          width: 210px;
+          text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+        }
+
+        .circleOne-link:hover {
+          box-shadow: 0px 0px 0px 175px rgba(173, 201, 245, .7) inset;
         }
 
         .circleTwo-link {
-          display: block;
-          background-size: 150px;
-          border-radius: 50%;
+          background-image:url('//cdn.buyerzone.com/images/mktg/portals/highway.jpg');
+          box-shadow: 0px 0px 0px 6px rgba(173, 201, 245, .7) inset;
+
+          height: 150px;
+          width: 150px;
         }
 
-        .circleTwo {
-          box-shadow: 0px 0px 0px 4px rgba(166, 143, 0, 1);
+        .circleTwo-link:hover {
+          box-shadow: 0px 0px 0px 175px rgba(173, 201, 245, .7) inset;
         }
 
         .circleThree-link {
-          display: block;
-          border-radius: 50%;
+          background-image:url('//cdn.buyerzone.com/images/mktg/portals/bucket.jpg');
+          box-shadow: 0px 0px 0px 4px rgba(166, 143, 0, 1) inset;
+
+          height: 130px;
+          width: 130px;
         }
 
-        .circleThree {
-          box-shadow: 0px 0px 0px 4px rgba(166, 143, 0, 1);
+        .circleThree-link:hover {
+          box-shadow: 0px 0px 0px 175px rgba(166, 143, 0, .7) inset;
         }
-      }
+      /*}*/
 
     </style>
   </head>
@@ -160,15 +187,9 @@ limitations under the License.
           <h1>Compare Free Price Quotes on Trucks From Multiple Sellers</h1>
         </div>
         <div class="circle-container">
-          <a href="#" class="circleOne-link">
-            <amp-img class="circleOne" width="210" height="210" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/box.jpg" media="(max-width: 515px)"></amp-img>
-          </a>
-          <a href="#" class="circleTwo-link">
-            <amp-img class="circleTwo" width="150" height="150" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/box.jpg" media="(max-width: 515px)"></amp-img>
-          </a>
-          <a href="#" class="circleThree-link">
-            <amp-img class="circleThree" width="130" height="130" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/box.jpg" media="(max-width: 515px)"></amp-img>
-          </a>
+          <a href="#" class="circle circleOne-link"></a>
+          <a href="#" class="circle circleTwo-link"></a>
+          <a href="#" class="circle circleThree-link"></a>
         </div>
       </div>
       <div class="description">
