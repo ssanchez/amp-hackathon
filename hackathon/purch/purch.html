@@ -82,17 +82,36 @@ limitations under the License.
         left: 0;
       }
 
+      .tagline {
+        color: white;
+      }
+
+      @media (max-width: 882px) {
+        h1 {
+          font-size: 1.65em;
+        }
+
+        .tagline {
+          margin: 0 auto;
+          max-width: 65%;
+        }
+      }
+
     </style>
   </head>
   <body>
     <div class="content-container">
-      <amp-img width="806" height="790" alt="Buyerzone" layout="responsive" src="https://cdn.buyerzone.com/images/mktg/portals/bg_trucks_mobile.jpg" media="(max-width: 415px)"></amp-img>
-      <amp-img height="806" alt="Buyerzone" layout="fixed-height" src="https://cdn.buyerzone.com/images/mktg/portals/bg_trucks_mobile.jpg" media="(min-width: 416px)"></amp-img>
+      <amp-img width="806" height="790" alt="Buyerzone" layout="responsive" src="https://cdn.buyerzone.com/images/mktg/portals/bg_trucks_mobile.jpg"></amp-img>
       <div class="headline">
-        <a href="/">
-          <amp-img width="220" height="33" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/BZ_logo_buyer.svg" media="(max-width: 415px)"></amp-img>
-        </a>
-        <amp-img width="300" height="130" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/headline2.svg" media="(max-width: 415px)"></amp-img>
+        <div class="logo">
+          <a href="/">
+            <amp-img width="220" height="33" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/BZ_logo_buyer.svg" media="(max-width: 882px)"></amp-img>
+          </a>
+        </div>
+        <amp-img width="300" height="130" alt="Choose Your Truck" layout="fixed" src="https://cdn.buyerzone.com/images/mktg/portals/headline2.svg" media="(max-width: 882px)"></amp-img>
+        <div class="tagline">
+          <h1>Compare Free Price Quotes on Trucks From Multiple Sellers</h1>
+        </div>
       </div>
     </div>
     <div class="description">
